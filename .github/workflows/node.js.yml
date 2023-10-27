@@ -25,13 +25,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        cache: 'yarn'
     - run: yarn
     - run: yarn build
     - name: Pushes to another repository
       uses: cpina/github-action-push-to-another-repository@main
       with:
           source-directory: 'deploy'
+          destination-github-username: 'trong874'
           destination-repository-name: 'react-html-map'
           target-branch: main
     
