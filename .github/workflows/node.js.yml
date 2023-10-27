@@ -30,6 +30,9 @@ jobs:
     - run: yarn build
     - name: Pushes to another repository
       uses: cpina/github-action-push-to-another-repository@main
+      env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
           source-directory: 'deploy'
           destination-github-username: 'trong874'
