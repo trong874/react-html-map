@@ -28,3 +28,10 @@ jobs:
         cache: 'npm'
     - run: yarn
     - run: yarn build
+    - name: Pushes to another repository
+      uses: cpina/github-action-push-to-another-repository@main
+      with:
+          source-directory: 'deploy'
+          destination-repository-name: 'react-html-map'
+          target-branch: main
+    
