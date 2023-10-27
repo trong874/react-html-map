@@ -1,7 +1,6 @@
 import NavigateHeader from "../../components/NavigateHeader";
-import { Checkbox, CheckboxGroup } from 'rsuite';
+import { Checkbox, CheckboxGroup, Drawer } from 'rsuite';
 import { useState } from "react";
-import { Drawer, RadioGroup, Radio, ButtonToolbar, Button, IconButton, Placeholder } from 'rsuite';
 import Arrow from '../../assets/svgs/arrow-right.svg';
 const Register = () => {
     const [value, setValue] = useState(['A', 'C']);
