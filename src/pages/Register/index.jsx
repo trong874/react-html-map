@@ -23,19 +23,19 @@ const Register = () => {
             <div className="flex py-4 items-center justify-between">
                 <Checkbox value="B" className="text-base font-normal">마이프렌드 이용약관 동의</Checkbox>
                 <button className='h-6 w-6' onClick={() => setOpen(true)}>
-                    <img src={Arrow} />
+                    <img src={Arrow}  alt="arrow" />
                 </button>
             </div>
             <div className="flex py-4 items-center justify-between">
                 <Checkbox value="D" className="text-base font-normal">개인정보처리방침 동의</Checkbox>
                 <button className='h-6 w-6' onClick={() => setOpen(true)}>
-                    <img src={Arrow} />
+                    <img src={Arrow} alt="arrow" />
                 </button>
             </div>
             <div className="flex py-4 items-center justify-between">
                 <Checkbox value="E" className="text-base font-normal">위치기반 서비스 동의</Checkbox>
                 <button className='h-6 w-6' onClick={() => setOpen(true)}>
-                    <img src={Arrow} />
+                    <img src={Arrow} alt="arrow" />
                 </button>
             </div>
             <div className="py-4">
