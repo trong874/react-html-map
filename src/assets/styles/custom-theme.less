@@ -1,0 +1,38 @@
+@primary-color: #9069FF;
+@font-family-base: 'Pretendard', sans-serif;
+@form-control-label-margin-bottom: 12px;
+@form-group-margin-bottom: 12px;
+:root {
+    --rs-text-primary: #333;
+}
+.rs-drawer-full.rs-drawer-left, .rs-drawer-full.rs-drawer-right {
+    width: 100%;
+}
+.drawer-header-custom {
+    .rs-drawer-header-close {
+        right: 16px;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .rs-drawer-title {
+        line-height: normal;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &.rs-drawer-header {
+        padding: 16px;
+        height: 56px;
+    }
+}
+.drawer-body-custom {
+    padding: 0 16px;
+}
+
+.rs-input {
+    padding: 18px 12px;
+    &:focus {
+        outline: none;
+        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.10);
+    }
+}
