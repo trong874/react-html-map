@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
+import { log } from 'console'
 // https://vitejs.dev/config/
-export default defineConfig((command) => {
+export default defineConfig(({command}) => {
   const config = {
     plugins: [react()],
     resolve: {
