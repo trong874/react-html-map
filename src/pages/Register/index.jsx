@@ -3,9 +3,12 @@ import { useState } from "react";
 import { Drawer } from 'rsuite';
 import NavigateHeader from "@/components/NavigateHeader";
 import Arrow from '@/assets/svgs/arrow-right.svg';
+import { useNavigate } from 'react-router-dom';
+
 const Register = () => {
     const [value, setValue] = useState(['A', 'C']);
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
     return <div className="pt-[56px] px-4">
         <NavigateHeader title="사용자 등록" />
         <div className="py-8">
@@ -16,6 +19,9 @@ const Register = () => {
             value={value}
             onChange={value => {
                 setValue(value);
+                if (value.length === 6) {
+                    navigate("/register/verify");
+                }
             }}
         >
             <div className="py-4">

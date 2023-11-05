@@ -4,6 +4,11 @@
 @form-group-margin-bottom: 12px;
 :root {
     --rs-text-primary: #333;
+    --rs-btn-primary-bg: #8781BD;
+    --rs-btn-primary-active-bg: #8781BD;
+    --rs-btn-primary-hover-bg: #8781BD;
+    --rs-input-disabled-bg: #E9ECF5;
+    --rs-text-disabled: #9FA5B8;
 }
 .rs-drawer-full.rs-drawer-left, .rs-drawer-full.rs-drawer-right {
     width: 100%;
@@ -35,4 +40,26 @@
         outline: none;
         box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.10);
     }
+}
+.rs-input-group {
+    .rs-input {
+        &:focus {
+            box-shadow: unset;
+        }
+    }
+}
+button {
+    background: transparent;
+}
+.rs-btn {
+    padding: 18px 24px;
+}
+.rs-picker-default .rs-picker-toggle.rs-btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 12px;
+}
+.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret,
+.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+    top: 18px;
 }

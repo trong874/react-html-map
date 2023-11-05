@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css';
 import '@/assets/styles/style.less';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 

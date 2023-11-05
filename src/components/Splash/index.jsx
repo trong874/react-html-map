@@ -1,6 +1,6 @@
 import Logo from '@/assets/svgs/logo.svg';
 import Typo from '@/assets/svgs/typo.svg';
-const Loading = () => {
+const Splash = () => {
     return <div className="flex flex-col items-center justify-between py-8 h-[100vh]">
         <div className="text-lg font-semibold flex gap-x-[4px]">
             <span className="text-[#00AEEF]">장애인</span>
@@ -16,4 +16,4 @@ const Loading = () => {
     </div>;
 };
 
-export default Loading;
+export default Splash;

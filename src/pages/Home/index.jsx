@@ -1,6 +1,6 @@
 import ButtonBottom from "@/components/ButtonBottom";
 import LogoRounded from "@/assets/svgs/logo-rounded.svg";
-import Loading from "@/components/Loading";
+import Splash from "@/components/Splash";
 import { useState, useEffect } from "react";
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <>{
-            loading ? <Loading /> : (
+            loading ? <Splash /> : (
                 <div className="flex flex-col items-center h-[100vh]">
                     <div className="flex items-center justify-center mt-[192px]">
                         <div className="bg-[#9069ff1a] w-[142px] h-[142px] rounded-full flex items-center justify-center">
