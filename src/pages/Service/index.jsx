@@ -1,26 +1,37 @@
-import Icon1 from '@/assets/svgs/icon_1.svg';
+import electricWheelchair from '@/assets/svgs/electric-wheelchair.svg';
+import Icons from '@/assets/svgs';
 import { useState } from 'react';
 
 const data = [
     {
         key: '1',
-        label: '전동휠체어',
-        icon: Icon1,
+        label: '휠체어',
+        icon: Icons.Wheelchair,
     },
     {
         key: '2',
         label: '전동휠체어',
-        icon: Icon1,
+        icon: Icons.ElectricWheelchair,
     },
     {
         key: '3',
-        label: '전동휠체어',
-        icon: Icon1,
+        label: '충전소',
+        icon: Icons.ChargingStation,
     },
     {
         key: '4',
-        label: '전동휠체어',
-        icon: Icon1,
+        label: '배터리 교환',
+        icon: Icons.BatteryReplacement,
+    },
+    {
+        key: '5',
+        label: '시각 장애인',
+        icon: Icons.VisuallyImpaired,
+    },
+    {
+        key: '6',
+        label: '수화통역',
+        icon: Icons.Interpretation,
     },
 ];
 const Service = () => {
@@ -56,7 +67,7 @@ const Service = () => {
                             >
                                 <div className=" flex flex-col items-center">
                                     <span className='text-[#8781BD] text-[16px] font-bold'>{item.label}</span>
-                                    <object className='w-[50px] h-[50px]' type="image/svg+xml" data={item.icon} />
+                                    <img className='w-[50px] h-[50px]' src={item.icon} alt='' />
                                 </div>
                             </div>)
                             : (<div
@@ -66,7 +77,7 @@ const Service = () => {
                             >
                                 <div className="flex flex-col items-center service-selected">
                                     <span className='text-[#9069FF] text-[16px] font-bold'>{item.label}</span>
-                                    <object className='w-[50px] h-[50px]' type="image/svg+xml" data={item.icon} />
+                                    <img className='w-[50px] h-[50px]' src={item.icon} alt='' />
                                 </div>
                             </div>)
                     })
