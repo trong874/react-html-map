@@ -4,6 +4,7 @@ import Register from '@/pages/Register';
 import Verify from '@/pages/Register/Verify';
 import CustomerInfo from "@/pages/Register/CustomerInfo";
 import Login from "@/pages/Login";
+import Service from '@/pages/Service';
 function App() {
   return (
     <Routes>
@@ -12,6 +13,7 @@ function App() {
       <Route path='/register/verify' element={<Verify />} />
       <Route path='/register/info' element={<CustomerInfo />} />
       <Route path='/login' element={<Login />} />
+      <Route path='/service' element={<Service />} />
     </Routes>
   );
 }
