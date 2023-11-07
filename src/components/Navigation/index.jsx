@@ -5,7 +5,7 @@ const Navigation = () => {
     return <nav className="nav-custom">
         <ul className="bg-white h-[70px] flex gap-x-11">
             <li className="flex flex-col items-center gap-y-1">
-                <Link to="">
+                <Link to="/home">
                     <img src={Icons.Home} alt="" />
                 </Link>
                 <span className="text-[12px] text-[#4F4F4F]">홈</span>
@@ -17,7 +17,7 @@ const Navigation = () => {
                 <span className="text-[12px] text-[#4F4F4F]">문의</span>
             </li>
             <li className="flex flex-col items-center gap-y-1">
-                <Link to="">
+                <Link to="/drive">
                     <img src={Icons.Phone} alt="" />
                 </Link>
                 <span className="text-[12px] text-[#4F4F4F]">통화</span>

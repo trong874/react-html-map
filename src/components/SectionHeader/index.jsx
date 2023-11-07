@@ -1,4 +1,5 @@
 import Svgs from '@/assets/svgs';
+import { Link } from 'react-router-dom';
 const SectionHeader = () => {
     return (
         <div className="section-header">
@@ -7,9 +8,9 @@ const SectionHeader = () => {
                 <a href="">
                     <img src={Svgs.Notice} alt=""/>
                 </a>
-                <a href="">
+                <Link to="/setting">
                     <img src={Svgs.Setting} alt=""/>
-                </a>
+                </Link>
             </div>
         </div>
     )

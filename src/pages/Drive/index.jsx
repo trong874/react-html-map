@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import CameraImage from '@/assets/images/camera.png'
 import Svgs from '@/assets/svgs';
-import MapImage from '@/assets/images/map.png';
+import MapImage from '@/assets/images/big-map-pin.png';
 import AppBar from "@/components/AppBar";
 import { useState } from "react";
 import CloseIcon from "@/assets/svgs/CloseIcon";
@@ -12,7 +12,7 @@ const Drive = () => {
     return (
         <div className="pt-[56px]">
             <AppBar title="서울숲" />
-            <div className="relative w-full h-[100vh] p-3" style={{ backgroundImage: `url(${MapImage})` }}>
+            <div className="relative w-full h-[650px] p-3" style={{ backgroundImage: `url(${MapImage})` }}>
                 <div className="fixed left-3 bottom-[94px]">
                     <div className="w-[42px] h-[42px] bg-image" style={{ backgroundImage: `url(${Svgs.TargetCircle})` }} />
                 </div>

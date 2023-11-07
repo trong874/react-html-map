@@ -23,6 +23,7 @@ import Close from './CloseIcon';
 import CameraCircle from './camera-circle.svg';
 import Record from './record.svg';
 import CloseCircle from './close-circle.svg';
+import Location from './location.svg';
 export default {
     Logo,
     LogoRounded,
@@ -48,5 +49,6 @@ export default {
     Close,
     CameraCircle,
     Record,
-    CloseCircle
+    CloseCircle,
+    Location,
 }

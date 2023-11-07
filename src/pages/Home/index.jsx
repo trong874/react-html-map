@@ -30,9 +30,9 @@ const Home = () => {
                     <div className="bg-white rounded-md py-4">
                         <div className="border-b border-b-[#E9ECF5] px-3 pb-3">
                             <div className="flex gap-x-[22px]">
-                                <Link to={'/drive'} className="rounded text-[11px] text-[#9069FF] bg-[#EBE5FF] p-[6px] h-[25px]">
+                                <button className="rounded text-[11px] text-[#9069FF] bg-[#EBE5FF] p-[6px] h-[25px]">
                                     운행준비중
-                                </Link>
+                                </button>
                                 <div className="flex flex-col gap-y-[6px]">
                                     <span className="text-[11px]">주행시간</span>
                                     <span className="text-[16px] font-bold">0</span>
