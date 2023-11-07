@@ -48,7 +48,7 @@ const Navigation = () => {
                         <span className="text-[12px] text-center block">요청하시면 기관에서 곧 전화가 걸려옵니다.</span>
                     </div>
                     <div className="flex justify-center">
-                        <Button color="red" appearance="primary" className="w-[217px]">위급 지원 전화 요청</Button>
+                        <Button color="red" appearance="primary" className="w-[217px]" onClick={() => setOpenModal(false)}>위급 지원 전화 요청</Button>
                     </div>
                 </div>
                 <Divider className="my-6" />
@@ -58,7 +58,7 @@ const Navigation = () => {
                         <span className="text-[12px] text-center block">요청하시면 기관에서 곧 전화가 걸려옵니다.</span>
                     </div>
                     <div className="flex justify-center">
-                        <Button color="blue" appearance="primary" className="w-[217px]">위급 지원 전화 요청</Button>
+                        <Button color="blue" appearance="primary" className="w-[217px]" onClick={() => setOpenModal(false)}>위급 지원 전화 요청</Button>
                     </div>
                 </div>
             </Modal.Body>
