@@ -3,6 +3,7 @@ import SectionHeader from "@/components/SectionHeader";
 import MapImage from '@/assets/images/map.png';
 import {Input, InputGroup, Modal} from "rsuite";
 import Svgs from '@/assets/svgs';
+import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <div className="pt-[56px]">
@@ -24,12 +25,14 @@ const Home = () => {
                         <span className="text-[13px]">서울 성동구 왕십리로 77</span>
                     </div>
                 </div>
-                <div className="fixed right-20 left-20 top-1/2 -translate-y-1/2">
+                <div className="fixed right-20 left-20 top-[55%] -translate-y-1/2">
                     <div className="w-[44px] h-[64px] bg-image mx-auto mb-3" style={{backgroundImage: `url(${Svgs.Pin})`}} />
                     <div className="bg-white rounded-md py-4">
                         <div className="border-b border-b-[#E9ECF5] px-3 pb-3">
                             <div className="flex gap-x-[22px]">
-                                <button className="rounded text-[11px] text-[#9069FF] bg-[#EBE5FF] p-[6px]">운행준비중</button>
+                                <Link to={'/drive'} className="rounded text-[11px] text-[#9069FF] bg-[#EBE5FF] p-[6px] h-[25px]">
+                                    운행준비중
+                                </Link>
                                 <div className="flex flex-col gap-y-[6px]">
                                     <span className="text-[11px]">주행시간</span>
                                     <span className="text-[16px] font-bold">0</span>

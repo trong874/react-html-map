@@ -1,4 +1,3 @@
-import electricWheelchair from '@/assets/svgs/electric-wheelchair.svg';
 import Icons from '@/assets/svgs';
 import { useState } from 'react';
 

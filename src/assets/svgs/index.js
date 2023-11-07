@@ -19,6 +19,10 @@ import Setting from './settings.svg';
 import Search from './search.svg';
 import TargetCircle from './target-circle.svg';
 import Pin from './pin.svg';
+import Close from './CloseIcon';
+import CameraCircle from './camera-circle.svg';
+import Record from './record.svg';
+import CloseCircle from './close-circle.svg';
 export default {
     Logo,
     LogoRounded,
@@ -40,5 +44,9 @@ export default {
     Setting,
     Search,
     TargetCircle,
-    Pin
+    Pin,
+    Close,
+    CameraCircle,
+    Record,
+    CloseCircle
 }
