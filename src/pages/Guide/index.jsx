@@ -1,5 +1,6 @@
 import MapImage from '@/assets/images/map-pin.png';
 import NavigateHeader from '@/components/NavigateHeader';
+import ButtonBottom from "@/components/ButtonBottom";
 
 const Guide = () => {
     return <div className="pt-[56px]">
@@ -26,6 +27,7 @@ const Guide = () => {
                     <span className='text-[16px] font-bold'>2.2km</span>
                 </div>
             </div>
+            <ButtonBottom to="">안내시작</ButtonBottom>
         </div>
     </div>
 }

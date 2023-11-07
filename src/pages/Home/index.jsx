@@ -8,7 +8,11 @@ const Home = () => {
     return (
         <div className="pt-[56px]">
             <SectionHeader/>
-            <div className="relative w-full h-[100vh] p-3" style={{backgroundImage: `url(${MapImage})`}}>
+            <div className="relative w-full h-[100vh] p-3" style={{
+                backgroundImage: `url(${MapImage})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+            }}>
                 <div className="fixed top-[68px] left-4 right-4">
                     <InputGroup inside>
                         <Input placeholder="목적지를 입력하세요."/>

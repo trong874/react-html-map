@@ -5,9 +5,9 @@ const SectionHeader = () => {
         <div className="section-header">
             <img src={Svgs.LogoHeader} alt=""/>
             <div className="flex gap-x-4">
-                <a href="">
+                <Link to="/notice">
                     <img src={Svgs.Notice} alt=""/>
-                </a>
+                </Link>
                 <Link to="/setting">
                     <img src={Svgs.Setting} alt=""/>
                 </Link>

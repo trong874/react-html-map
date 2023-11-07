@@ -24,6 +24,10 @@ import CameraCircle from './camera-circle.svg';
 import Record from './record.svg';
 import CloseCircle from './close-circle.svg';
 import Location from './location.svg';
+import Star from './star.svg';
+import StarIcon from './StarIcon';
+import Trash from './trash.svg';
+import PlayerCircle from './player-circle.svg';
 export default {
     Logo,
     LogoRounded,
@@ -51,4 +55,8 @@ export default {
     Record,
     CloseCircle,
     Location,
+    Star,
+    StarIcon,
+    Trash,
+    PlayerCircle
 }

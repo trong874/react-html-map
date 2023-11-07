@@ -15,11 +15,11 @@ const CustomerInfo = () => {
         <NavigateHeader title="사용자 정보" />
         <Form className="px-4 pt-6" fluid formValue={formValue}>
             <Form.Group>
-                <Form.ControlLabel>장애인 등록번호</Form.ControlLabel>
+                <Form.ControlLabel>홍길동</Form.ControlLabel>
                 <Form.Control placeholder="홍길동" name="" disabled/>
             </Form.Group>
             <Form.Group>
-                <Form.ControlLabel>성명</Form.ControlLabel>
+                <Form.ControlLabel>장애인 등록번호</Form.ControlLabel>
                 <div className="flex gap-x-4">
                     <Input className="flex-1" placeholder='장애인 등록번호 입력'/>
                     <button className="py-[18px] border border-[#333] rounded-[6px] min-w-[75px] px-2">인증</button>

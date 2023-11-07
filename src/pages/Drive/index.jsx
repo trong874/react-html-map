@@ -12,9 +12,16 @@ const Drive = () => {
     return (
         <div className="pt-[56px]">
             <AppBar title="서울숲" />
-            <div className="relative w-full h-[650px] p-3" style={{ backgroundImage: `url(${MapImage})` }}>
+            <div className="relative w-full h-[100vh] p-3" style={{
+                backgroundImage: `url(${MapImage})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+            }}>
                 <div className="fixed left-3 bottom-[94px]">
-                    <div className="w-[42px] h-[42px] bg-image" style={{ backgroundImage: `url(${Svgs.TargetCircle})` }} />
+                    <div className="w-[42px] h-[42px] bg-image" style={{
+                        backgroundImage: `url(${Svgs.TargetCircle})`,
+                        filter: 'drop-shadow(0px 3px 12px rgba(0, 0, 0, 0.10)) drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.10))',
+                    }} />
                 </div>
                 <div className="fixed right-3 bottom-[94px]">
                     <div className="bg-white px-3 border border-[#796BAF] rounded h-8 flex items-center">
