@@ -23,8 +23,7 @@ const User = () => {
                         </div>
                     </div>
                     <span className="block mt-[52px] px-[50px] text-center text-[21px] font-semibold">
-                        마이프렌드를 사용하기 위해서는
-                        사용자 등록이 필요합니다.
+                        마이프렌드를 사용하기 위해서는 <br/> 사용자 등록이 필요합니다.
                     </span>
                     <ButtonBottom to="/register">사용자 등록</ButtonBottom>
                 </div>)

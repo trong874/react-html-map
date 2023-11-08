@@ -15,9 +15,9 @@ const Login = () => {
     return <div className="px-4">
         <div className="mt-[107px]">
             <img src={Logo} alt="logo img" className="w-20 mx-auto" />
-            <div className="mx-auto max-w-[208px] mt-7 mb-8">
-                <span className="text-center text-[21px] font-semibold ">
-                    마이프렌드 서비스 가입이 완료되었습니다.
+            <div className="mx-auto mt-7 mb-8">
+                <span className="block text-center text-[21px] font-semibold ">
+                    마이프렌드 서비스 가입이 <br /> 완료되었습니다.
                 </span>
             </div>
         </div>

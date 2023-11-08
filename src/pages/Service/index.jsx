@@ -51,10 +51,10 @@ const Service = () => {
     return (
         <div className="px-7">
             <div className="mx-auto mt-[70px] mb-16">
-                <h4 className="text-[21px] font-semibold mb-1">원하시는 서비스를 선택해주세요.</h4>
+                <h4 className="text-center text-[21px] font-semibold mb-1">원하시는 서비스를 선택해주세요.</h4>
                 <div className="text-center text-[12px] text-[#796BAF]">현재는 휠체어 서비스만 이용가능합니다.</div>
             </div>
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
                 {
                     data.map(item => {
                         const existed = select.filter(record => record.key === item.key).length;
